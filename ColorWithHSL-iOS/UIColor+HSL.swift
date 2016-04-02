@@ -12,6 +12,17 @@ import UIKit
 
 public extension UIColor {
     
+    //MARK: - Public method
+    
+    /**
+    Creates UIColor object based on given HSL values.
+    
+    - parameter hue: CGFloat with the hue value. Hue value must be between 0 and 360.
+    - parameter saturation: CGFloat with the saturation value. Saturation value must be between 0 and 1.
+    - parameter lightness: CGFloat with the lightness value. Lightness value must be between 0 and 1.
+    
+    - returns: A UIColor from the given HSL values.
+    */
     @objc(hsl_colorWithHue:saturation:lightness:)
     public class func colorWithHSL(hue hue: CGFloat, saturation: CGFloat, lightness: CGFloat) -> UIColor {
         
