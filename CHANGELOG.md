@@ -5,6 +5,6 @@
     - Hue value must be between 0 and 360.
     - Saturation value must be between 0 and 1.
     - Lightness value must be between 0 and 1.
-  - Added some Tests
+ - Added some Tests
 
 
