@@ -24,11 +24,15 @@ public extension UIColor {
     - returns: A UIColor from the given HSL values.
     */
     @objc(hsl_colorWithHue:saturation:lightness:)
-    public class func colorWithHSL(hue hue: CGFloat, saturation: CGFloat, lightness: CGFloat) -> UIColor {
+    public class func colorWithHSL(hue hue: CGFloat, saturation: CGFloat, lightness: CGFloat) -> UIColor? {
         
         var r: CGFloat = 0
         var g: CGFloat = 0
         var b: CGFloat = 0
+        
+        guard hue <= 360 && hue >= 0.0 else { return nil }
+        guard saturation <= 1.0 && saturation >= 0.0 else { return nil }
+        guard lightness <= 1.0 && lightness >= 0.0 else { return nil }
         
         let chroma: CGFloat = (1 - abs((2 * lightness) - 1)) * saturation
         let h60: CGFloat = hue / 60.0
