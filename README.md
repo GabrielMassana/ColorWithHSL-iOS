@@ -38,11 +38,11 @@ Drag into your project the folder `/ColorWithHSL-iOS`. That's all.
 ## Example Swift
 
 ```swift
-        let black: UIColor = UIColor.colorWithHSL(hue: 0, saturation: 0, lightness: 0)
-        let white: UIColor = UIColor.colorWithHSL(hue: 0, saturation: 0, lightness: 1)
-        let red: UIColor = UIColor.colorWithHSL(hue: 0, saturation: 1, lightness: 0.5)
-        let green: UIColor = UIColor.colorWithHSL(hue: 120, saturation: 1, lightness: 0.5)
-        let blue: UIColor = UIColor.colorWithHSL(hue: 240, saturation: 1, lightness: 0.5)
+        let black: UIColor = UIColor.colorWithHSL(hue: 0.0, saturation: 0.0, lightness: 0.0)
+        let white: UIColor = UIColor.colorWithHSL(hue: 0.0, saturation: 0.0, lightness: 1.0)
+        let red: UIColor = UIColor.colorWithHSL(hue: 0.0, saturation: 1.0, lightness: 0.5)
+        let green: UIColor = UIColor.colorWithHSL(hue: 120.0, saturation: 1.0, lightness: 0.5)
+        let blue: UIColor = UIColor.colorWithHSL(hue: 240.0, saturation: 1.0, lightness: 0.5)
 ```
 ## Example Objective-C
 
@@ -50,11 +50,11 @@ Drag into your project the folder `/ColorWithHSL-iOS`. That's all.
 #import "ColorWithHSL-Swift.h"
 
 ...
-    UIColor *black = [UIColor hsl_colorWithHue:0 saturation:0 lightness:0];
-    UIColor *white = [UIColor hsl_colorWithHue:0 saturation:0 lightness:1];
-    UIColor *red = [UIColor hsl_colorWithHue:0 saturation:1 lightness:0.5];
-    UIColor *green = [UIColor hsl_colorWithHue:120 saturation:1 lightness:0.5];
-    UIColor *blue = [UIColor hsl_colorWithHue:240 saturation:1 lightness:0.5];
+    UIColor *black = [UIColor hsl_colorWithHue:0.0 saturation:0.0 lightness:0.0];
+    UIColor *white = [UIColor hsl_colorWithHue:0.0 saturation:0.0 lightness:1.0];
+    UIColor *red = [UIColor hsl_colorWithHue:0.0 saturation:1.0 lightness:0.5];
+    UIColor *green = [UIColor hsl_colorWithHue:120.0 saturation:1.0 lightness:0.5];
+    UIColor *blue = [UIColor hsl_colorWithHue:240.0 saturation:1.0 lightness:0.5];
     
         
 ```
