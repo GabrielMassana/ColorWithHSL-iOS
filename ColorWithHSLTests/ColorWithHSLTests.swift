@@ -8,28 +8,57 @@
 
 import XCTest
 
+@testable import ColorWithHSL
+
 class ColorWithHSLTests: XCTestCase {
     
     override func setUp() {
+        
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    //MARK: - Valid
+
+    func test_colorWithHex_newObjectReturned() {
+        
+        let color = UIColor.colorWithHSL(hue: 0.0, saturation: 0.0, lightness: 0.0)
+        
+        XCTAssertNotNil(color, "A valid Color object wasn't created");
+    }
+
+    func test_colorWithHex_newObjectReturned_outOfRangeValues() {
+        
+        let color = UIColor.colorWithHSL(hue: 361.0, saturation: 1.01, lightness: 1.01)
+        
+        XCTAssertNotNil(color, "A valid Color object wasn't created");
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+    //MARK: - SpecificColor
+    
+    func test_colorWithHex_red() {
+        
+        let redColor = UIColor.colorWithHSL(hue: 0.0, saturation: 1.0, lightness: 0.5)
+        
+        XCTAssertEqual(redColor, UIColor.redColor(), "A red Color object wasn't created");
     }
     
+    func test_colorWithHex_green() {
+        
+        let greenColor = UIColor.colorWithHSL(hue: 120.0, saturation: 1.0, lightness: 0.5)
+        
+        XCTAssertEqual(greenColor, UIColor.greenColor(), "A green Color object wasn't created");
+    }
+    
+    func test_colorWithHex_blue() {
+        
+        let blueColor = UIColor.colorWithHSL(hue: 240.0, saturation: 1.0, lightness: 0.5)
+        
+        XCTAssertEqual(blueColor, UIColor.blueColor(), "A blue Color object wasn't created");
+    }
 }
