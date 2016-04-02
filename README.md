@@ -61,7 +61,7 @@ ColorWithHSL-iOS is released under the MIT license. Please see the file called L
 ## Versions
 
 ```bash
-$ git tag -a 0.0.0 -m 'Version 0.0.0'
+$ git tag -a 1.0.0 -m 'Version 1.0.0'
 
 $ git push --tags
 ```
