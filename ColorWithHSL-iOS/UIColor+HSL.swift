@@ -12,7 +12,7 @@ import UIKit
 
 public extension UIColor {
     
-    @objc(hsl_colorWithHSL:::)
+    @objc(hsl_colorWithHue:saturation:lightness:)
     public class func colorWithHSL(hue hue: CGFloat, saturation: CGFloat, lightness: CGFloat) -> UIColor {
         
         var r: CGFloat = 0

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C00BDD1C1CAFC370004FB91B /* ColorWithHSLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00BDD1B1CAFC370004FB91B /* ColorWithHSLTests.swift */; };
 		C0A373491CAF2952009636F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A373471CAF2952009636F8 /* Main.storyboard */; };
 		C0A3734B1CAF2952009636F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0A3734A1CAF2952009636F8 /* Assets.xcassets */; };
 		C0A3734E1CAF2952009636F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A3734C1CAF2952009636F8 /* LaunchScreen.storyboard */; };
@@ -15,7 +16,20 @@
 		C0A3735E1CAFAF00009636F8 /* UIColor+HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A3735D1CAFAF00009636F8 /* UIColor+HSL.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C00BDD1E1CAFC370004FB91B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0A373381CAF2952009636F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0A3733F1CAF2952009636F8;
+			remoteInfo = ColorWithHSL;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		C00BDD191CAFC370004FB91B /* ColorWithHSLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorWithHSLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C00BDD1B1CAFC370004FB91B /* ColorWithHSLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWithHSLTests.swift; sourceTree = "<group>"; };
+		C00BDD1D1CAFC370004FB91B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0A373401CAF2952009636F8 /* ColorWithHSL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorWithHSL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A373481CAF2952009636F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0A3734A1CAF2952009636F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -27,6 +41,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C00BDD161CAFC370004FB91B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0A3733D1CAF2952009636F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +58,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C00BDD1A1CAFC370004FB91B /* ColorWithHSLTests */ = {
+			isa = PBXGroup;
+			children = (
+				C00BDD1B1CAFC370004FB91B /* ColorWithHSLTests.swift */,
+				C00BDD1D1CAFC370004FB91B /* Info.plist */,
+			);
+			path = ColorWithHSLTests;
+			sourceTree = "<group>";
+		};
 		C0A373371CAF2952009636F8 = {
 			isa = PBXGroup;
 			children = (
 				C0A373421CAF2952009636F8 /* ColorWithHSL */,
+				C00BDD1A1CAFC370004FB91B /* ColorWithHSLTests */,
 				C0A373411CAF2952009636F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				C0A373401CAF2952009636F8 /* ColorWithHSL.app */,
+				C00BDD191CAFC370004FB91B /* ColorWithHSLTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +118,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C00BDD181CAFC370004FB91B /* ColorWithHSLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C00BDD221CAFC370004FB91B /* Build configuration list for PBXNativeTarget "ColorWithHSLTests" */;
+			buildPhases = (
+				C00BDD151CAFC370004FB91B /* Sources */,
+				C00BDD161CAFC370004FB91B /* Frameworks */,
+				C00BDD171CAFC370004FB91B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C00BDD1F1CAFC370004FB91B /* PBXTargetDependency */,
+			);
+			name = ColorWithHSLTests;
+			productName = ColorWithHSLTests;
+			productReference = C00BDD191CAFC370004FB91B /* ColorWithHSLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C0A3733F1CAF2952009636F8 /* ColorWithHSL */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0A373521CAF2952009636F8 /* Build configuration list for PBXNativeTarget "ColorWithHSL" */;
@@ -113,6 +163,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = GabrielMassana;
 				TargetAttributes = {
+					C00BDD181CAFC370004FB91B = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = C0A3733F1CAF2952009636F8;
+					};
 					C0A3733F1CAF2952009636F8 = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -132,11 +186,19 @@
 			projectRoot = "";
 			targets = (
 				C0A3733F1CAF2952009636F8 /* ColorWithHSL */,
+				C00BDD181CAFC370004FB91B /* ColorWithHSLTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C00BDD171CAFC370004FB91B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0A3733E1CAF2952009636F8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -150,6 +212,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C00BDD151CAFC370004FB91B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C00BDD1C1CAFC370004FB91B /* ColorWithHSLTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0A3733C1CAF2952009636F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -161,6 +231,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C00BDD1F1CAFC370004FB91B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0A3733F1CAF2952009636F8 /* ColorWithHSL */;
+			targetProxy = C00BDD1E1CAFC370004FB91B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C0A373471CAF2952009636F8 /* Main.storyboard */ = {
@@ -182,6 +260,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C00BDD201CAFC370004FB91B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ColorWithHSLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Massana.ColorWithHSLTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorWithHSL.app/ColorWithHSL";
+			};
+			name = Debug;
+		};
+		C00BDD211CAFC370004FB91B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ColorWithHSLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Massana.ColorWithHSLTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorWithHSL.app/ColorWithHSL";
+			};
+			name = Release;
+		};
 		C0A373501CAF2952009636F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -288,6 +390,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C00BDD221CAFC370004FB91B /* Build configuration list for PBXNativeTarget "ColorWithHSLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00BDD201CAFC370004FB91B /* Debug */,
+				C00BDD211CAFC370004FB91B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		C0A3733B1CAF2952009636F8 /* Build configuration list for PBXProject "ColorWithHSL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
