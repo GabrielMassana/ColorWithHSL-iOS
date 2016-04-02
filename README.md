@@ -8,7 +8,11 @@
 
 ##   What is it?
 
-Swift Extension to convert HSL colour values into UIColor Objects.
+Swift Extension to convert a HSL colour values into a UIColor Objects.
+
+HSL stands for hue, saturation, and lightness, and is also often called HLS.
+
+Formula from [Wikipedia](https://en.wikipedia.org/wiki/HSL_and_HSV#From_HSL).
 
 ## Installation
 
