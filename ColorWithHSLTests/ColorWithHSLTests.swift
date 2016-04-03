@@ -15,7 +15,6 @@ class ColorWithHSLTests: XCTestCase {
     override func setUp() {
         
         super.setUp()
-
     }
     
     override func tearDown() {
@@ -25,14 +24,14 @@ class ColorWithHSLTests: XCTestCase {
     
     //MARK: - Valid
 
-    func test_colorWithHex_newObjectReturned_minimum() {
+    func test_colorWithHSL_newObjectReturned_minimum() {
         
         let color = UIColor.colorWithHSL(hue: 0.0, saturation: 0.0, lightness: 0.0)
         
         XCTAssertNotNil(color, "A valid Color object wasn't created");
     }
 
-    func test_colorWithHex_newObjectReturned_maximum() {
+    func test_colorWithHSL_newObjectReturned_maximum() {
         
         let color = UIColor.colorWithHSL(hue: 360.0, saturation: 1.0, lightness: 1.0)
         
@@ -41,42 +40,42 @@ class ColorWithHSLTests: XCTestCase {
     
     //MARK: - NoValid
     
-    func test_colorWithHex_outOfRangeHue_over() {
+    func test_colorWithHSL_outOfRangeHue_over() {
         
         let color = UIColor.colorWithHSL(hue: 361.0, saturation: 0.5, lightness: 0.5)
         
         XCTAssertNil(color, "A valid Color object was created");
     }
 
-    func test_colorWithHex_outOfRangeHue_under() {
+    func test_colorWithHSL_outOfRangeHue_under() {
         
         let color = UIColor.colorWithHSL(hue: -1.0, saturation: 0.5, lightness: 0.5)
         
         XCTAssertNil(color, "A valid Color object was created");
     }
     
-    func test_colorWithHex_outOfRangeSaturation_over() {
+    func test_colorWithHSL_outOfRangeSaturation_over() {
         
         let color = UIColor.colorWithHSL(hue: 180.0, saturation: 1.1, lightness: 0.5)
         
         XCTAssertNil(color, "A valid Color object was created");
     }
     
-    func test_colorWithHex_outOfRangeSaturation_under() {
+    func test_colorWithHSL_outOfRangeSaturation_under() {
         
         let color = UIColor.colorWithHSL(hue: 180.0, saturation: -0.1, lightness: 0.5)
         
         XCTAssertNil(color, "A valid Color object was created");
     }
     
-    func test_colorWithHex_outOfRangeLightness_over() {
+    func test_colorWithHSL_outOfRangeLightness_over() {
         
         let color = UIColor.colorWithHSL(hue: 180.0, saturation: 0.5, lightness: 1.1)
         
         XCTAssertNil(color, "A valid Color object was created");
     }
     
-    func test_colorWithHex_outOfRangeLightness_under() {
+    func test_colorWithHSL_outOfRangeLightness_under() {
         
         let color = UIColor.colorWithHSL(hue: 180.0, saturation: 0.5, lightness: -0.1)
         
@@ -85,21 +84,21 @@ class ColorWithHSLTests: XCTestCase {
     
     //MARK: - SpecificColor
     
-    func test_colorWithHex_red() {
+    func test_colorWithHSL_red() {
         
         let redColor = UIColor.colorWithHSL(hue: 0.0, saturation: 1.0, lightness: 0.5)
         
         XCTAssertEqual(redColor, UIColor.redColor(), "A red Color object wasn't created");
     }
     
-    func test_colorWithHex_green() {
+    func test_colorWithHSL_green() {
         
         let greenColor = UIColor.colorWithHSL(hue: 120.0, saturation: 1.0, lightness: 0.5)
         
         XCTAssertEqual(greenColor, UIColor.greenColor(), "A green Color object wasn't created");
     }
     
-    func test_colorWithHex_blue() {
+    func test_colorWithHSL_blue() {
         
         let blueColor = UIColor.colorWithHSL(hue: 240.0, saturation: 1.0, lightness: 0.5)
         
