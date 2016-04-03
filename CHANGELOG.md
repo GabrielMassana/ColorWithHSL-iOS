@@ -1,4 +1,4 @@
-#### 1.0.5
+#### 1.0.6
 
  - First release
  - Extension will create a UIColor object based on given HSL values.
